@@ -6,7 +6,6 @@ require_once "libs/Smarty.class.php";
 $smarty = new Smarty();
 $smarty->setTemplateDir( 'templates' );
 
-
 $action = ltrim( $_SERVER['REQUEST_URI'], '/' ) ?? 'index';
 
 switch( $action )
@@ -20,7 +19,6 @@ switch( $action )
         {
             echo "I will login user!";
         }
-
         break;
     case "register":
         if( $_SERVER['REQUEST_METHOD'] === 'GET' )
