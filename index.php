@@ -1,6 +1,7 @@
 <?php
 
 require_once "functions.php";
+require_once "session.php";
 require_once "libs/Smarty.class.php";
 
 $smarty = new Smarty();
@@ -17,7 +18,9 @@ switch( $action )
         }
         else
         {
-            echo "I will login user!";
+            $email    = $_POST['email'];
+            $password = $_POST['password'];
+            loginUser( $email, $password );
         }
         break;
     case "register":
@@ -27,9 +30,22 @@ switch( $action )
         }
         else
         {
-            echo "I will register user!";
+            $name     = $_POST['name'];
+            $email    = $_POST['email'];
+            $gender   = $_POST['gender'];
+            $password = $_POST['password'];
+            createUser( $name, $email, $gender, $password );
+            echo "I WILL TRY TO REGISTER USER";
         }
         break;
+    case 'session':
+        print_r( $_SESSION );
+        break;
+    case "logout":
+        session_destroy();
+        header( "Location: /" );
+        break;
+    case "index":
     default:
         getDeafaultPage();
 }
