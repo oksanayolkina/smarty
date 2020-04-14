@@ -35,16 +35,15 @@ switch( $action )
             $gender   = $_POST['gender'];
             $password = $_POST['password'];
             createUser( $name, $email, $gender, $password );
-            echo "I WILL TRY TO REGISTER USER";
         }
         break;
-    case 'session':
-        print_r( $_SESSION );
-        break;
-    case "logout":
-        session_destroy();
-        header( "Location: /" );
-        break;
+//    case 'session':
+//        print_r( $_SESSION );
+//        break;
+//    case "logout":
+//        session_destroy();
+//        header( "Location: /" );
+//        break;
     case "index":
     default:
         getDeafaultPage();

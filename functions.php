@@ -63,7 +63,7 @@ function loginUser( string $email, string $password )
         }
     }
 
-    header( "Location: /?action=login&error=User not found" );
+    header( "Location: /" );
 }
 
 function readJsonFile( string $fileName ): array
