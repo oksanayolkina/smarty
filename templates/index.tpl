@@ -1,17 +1,19 @@
 {extends file='layout.tpl'}
 {block name=main}
-<table border="1" class="table">
-    <thead>
-        <th>test</th>
-        <th>meta</th>
-        <th>ololo</th>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">NAME</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">GENDER</th>
+        </tr>
     </thead>
     <tbody>
         {foreach $data as $row}
             <tr>
-                <td>{{$row['test']}}</td>
-                <td>{{$row['meta']}}</td>
-                <td>{{$row['ololo']}}</td>
+                <td>{{$row['name']}}</td>
+                <td>{{$row['email']}}</td>
+                <td>{{$row['gender']}}</td>
             </tr>
         {/foreach}
     </tbody>

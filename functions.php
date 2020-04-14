@@ -14,15 +14,13 @@ function getRegisterView()
 
     $smarty->assign( 'type', 'Register' );
     $smarty->assign( 'action', 'register' );
-    $smarty->display( 'form.tpl' );
+    $smarty->display( 'form2.tpl' );
 }
 
 function getDeafaultPage()
 {
     global $smarty;
 
-    $smarty->assign( 'type', 'Register' );
-    $smarty->assign( 'action', 'register' );
     $smarty->display( 'index.tpl' );
 }
 
