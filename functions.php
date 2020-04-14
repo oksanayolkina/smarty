@@ -27,7 +27,7 @@ function getDeafaultPage()
     $smarty->display( 'index.tpl' );
 }
 
-function createUser( string $name, string $email, bool $gender, string $password ): bool
+function createUser( string $name, string $email, string $gender, string $password ): bool
 {
     $newUser = [
         'name'     => $name,
