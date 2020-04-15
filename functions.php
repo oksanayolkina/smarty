@@ -36,7 +36,6 @@ function createUser( string $name, string $email, string $gender, string $passwo
         'password' => md5( $password ),
     ];
 
-
     $users   = readJsonFile( USERS_FILE );
     $users[] = $newUser;
     writeJsonFile( $users, USERS_FILE );
