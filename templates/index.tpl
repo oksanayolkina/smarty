@@ -9,11 +9,11 @@
         </tr>
     </thead>
     <tbody>
-        {foreach $data as $row}
+        {foreach $data as $user}
             <tr>
-                <td>{{$row['name']}}</td>
-                <td>{{$row['email']}}</td>
-                <td>{{$row['gender']}}</td>
+                <td>{$user['name']}</td>
+                <td>{$user['email']}</td>
+                <td>{$user['gender']}</td>
             </tr>
         {/foreach}
     </tbody>

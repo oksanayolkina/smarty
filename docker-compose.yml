@@ -5,11 +5,11 @@ services:
     container_name: first-mysql
     restart: always
     environment:
-      MYSQL_DATABASE: test
-      MYSQL_USER: root
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      - MYSQL_ROOT_PASSWORD=test
     ports:
       - "3306:3306"
+    volumes:
+      - "./db:/var/lib/mysql"
   php:
     image: webdevops/php:7.4
     container_name: first-php
