@@ -24,8 +24,6 @@ function getDeafaultPage()
 {
     global $smarty;
 
-//    $smarty->assign( 'type', 'Register' );
-//    $smarty->assign( 'action', 'register' );
     $smarty->display( 'index.tpl' );
 }
 
