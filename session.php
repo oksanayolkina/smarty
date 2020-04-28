@@ -8,6 +8,5 @@ if( isset( $_COOKIE['session_id'] ) )
 else
 {
     session_start();
-    setcookie( 'session_id', session_id(), time() + 86000 );
-    unset( $_SESSION['data'] );
+    setcookie( 'session_id', session_id(), time() + 86400 );
 }
