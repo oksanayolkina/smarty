@@ -1,5 +1,5 @@
 <?php
-
+echo "hello";
 try {
     $dbh = new PDO('mysql:host=first-mysql;port=3306;dbname=shop_smarty', 'root', 'test');
     foreach($dbh->query('SELECT * FROM users', PDO::FETCH_ASSOC) as $row) {
