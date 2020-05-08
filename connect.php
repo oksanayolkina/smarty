@@ -19,3 +19,11 @@ catch (Exception $e) {
 //CREATE DATABASE shop_smarty;
 //CREATE USER 'oksana'@'localhost' IDENTIFIED WITH mysql_native_password BY 'oksanaoksana';
 //GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, DROP, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES ON shop_smarty.* TO 'oksana'@'localhost';
+
+
+//CREATE TABLE `users` (
+//`id` int(11) NOT NULL AUTO_INCREMENT,
+//  `name` varchar(100) NOT NULL,
+//  `data` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+//  PRIMARY KEY (`id`)
+//) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8
